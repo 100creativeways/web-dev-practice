@@ -3,6 +3,50 @@
 
 
 
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* hidden initially */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background: #fcc59e;
+    /* main orange-brown color */
+    color: #a13a12;
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.popup-box button {
+    margin-top: 15px;
+    background: #cb440f;
+    /* lighter orange */
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: #fcc59e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-box button:hover {
+    background: #f3a861;
+}
+
+
+
+
 
 
 
@@ -32,7 +76,7 @@ padding: 0 10%;
 .menu ul li {display: inline;
 padding: 0 24px;
 font-family: Arial, Helvetica, sans-serif;
-color: #5e3519 ;
+color: #7a401a;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight: bold;
 white-space: nowrap;
@@ -51,18 +95,23 @@ border-radius: 25px;
 
 button {
     border-radius: 16px;
-    background: transparent;
- 
-    border: 2 px solid #d4521e;
-    border-color: #d4521e;
+    background-color:rgba(255, 174, 99, 0.4);
+
+
+    border: 2 px solid rgb(212, 82, 30);
+    border-color: rgb(244, 105, 50, 0.7);
     padding: 0.7em;
-    color: #d4521e;
+    color: rgb(212, 82, 30);
     font-weight: bold;
     font-size: 1em;
+    cursor: pointer;
+   transition: background 0.3s, color 0.3s;
 }
 
 button:hover {
-    background-image: linear-gradient(180deg, #faa153, #ffd294, #faa153);}
+    background-image: linear-gradient(180deg, rgb(250, 161, 83), rgb(255, 210, 148), rgb(250, 161, 83));
+opacity: 0.8;
+}
 
 .b2 {
     font-size: 1em;
@@ -132,6 +181,34 @@ h5 {
     color: #d4521e;
     margin-bottom: -0.5em;
 }
+
+h5.example {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+h5.example:hover {
+    color: #e88e18;
+}
+
+
+
+h5.e_mobile {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+h5.e_mobile:hover {
+    color: #e88e18;
+}
+
+
+
+
+
+
+
+
 
 .process {
    

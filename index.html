@@ -9,7 +9,7 @@
         
 
 <title>
-   AVA
+   AVA MAY
 </title>
     </head>
 
@@ -43,7 +43,7 @@
 
 <div class="intro">
 
-    <h4> Ava - QA Engineer</h4>
+    <h4> Ava May - QA Engineer</h4>
     <p class="one">As a QA Engineer, I’m passionate about ensuring top-quality software through meticulous testing, automation, and a commitment to excellence</p>
     <button onclick="window.location.href='#contact-form'" class="b2">LET'S GET IN TOUCH</button>
 </div>
@@ -53,27 +53,23 @@
 
 
 <div id="middle">
-
-    <img class="img2" src='img/2.jpg'>
-
-    <img class="img2" src='img/3.jpg'>
-
-    <img class="img2" src='img/4.jpg'>
-
+    <img class="img2 tooltip-img" src="img/2.jpg" title="NEW UPDATES AHEAD">
+    <img class="img2 tooltip-img" src="img/3.jpg" title="NEW UPDATES AHEAD">
+    <img class="img2 tooltip-img" src="img/4.jpg" title="NEW UPDATES AHEAD">
 </div>
 
 
 <div class="pic_descr">
     <div> 
-    <H5>EXAMPLE.COM </H5>
+    <h5 class="example">EXAMPLE.COM</h5>
     <p>Project 1 </p>
 </div>
 <div>  
-    <H5>EXAMPLE.COM</H5>
+    <h5 class="example">EXAMPLE.COM</h5>
     <p>Project 2 </p>
 </div>
 <div> 
-    <H5>EXAMPLE.COM</H5>
+    <h5 class="example">EXAMPLE.COM</h5>
     <p>Project 3 </p>
 </div>
 </div>
@@ -82,18 +78,16 @@
 
 
 <div class="mobile">
-    <img class="img2" src='img/2.jpg'>
-    <H5 class="e_mobile">EXAMPLE.COM </H5>
+    <img class="img2" src='img/2.jpg' title="NEW UPDATES AHEAD">
+    <h5 class="e_mobile">EXAMPLE.COM </h5>
     <p class="p_mobile">Project 1 </p>
-    <img class="img2" src='img/3.jpg'>
-    <H5 class="e_mobile">EXAMPLE.COM</H5>
+    <img class="img2" src='img/3.jpg' title="NEW UPDATES AHEAD">
+    <h5 class="e_mobile">EXAMPLE.COM</H5>
     <p class="p_mobile">Project 2 </p>
-    <img class="img2" src='img/4.jpg'>
+    <img class="img2" src='img/4.jpg' title="NEW UPDATES AHEAD">
     <H5 class="e_mobile">EXAMPLE.COM</H5>
     <p class="p_mobile">Project 3 </p>
 </div>
-
-
 
 
 
@@ -153,6 +147,34 @@
               
         </div>
     </footer>
+
+
+<div id="customPopup" class="popup-overlay">
+    <div class="popup-box">
+        <p>THIS PAGE IS COMING SOON. STAY TUNED!</p>
+        <button id="closePopup">OK</button>
+    </div>
+</div>
+
+
+
+<script>
+    document.querySelectorAll(".example, .e_mobile").forEach(function (el) {
+        el.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("customPopup").style.display = "flex";
+        });
+    });
+
+    document.getElementById("closePopup").addEventListener("click", function () {
+        document.getElementById("customPopup").style.display = "none";
+    });
+
+
+    
+</script>
+
+
 </body>
    
 </html>
