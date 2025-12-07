@@ -29,7 +29,7 @@
 
 <div>
     
-    <button onclick="window.location.href='#contact-form'">CONTACT</button>
+    <button onclick="window.location.href='#contact2'">CONTACT</button>
 
 </div>
 
@@ -45,7 +45,7 @@
 
     <h4> Ava May - QA Engineer</h4>
     <p class="one">As a QA Engineer, I’m passionate about ensuring top-quality software through meticulous testing, automation, and a commitment to excellence</p>
-    <button onclick="window.location.href='#contact-form'" class="b2">LET'S GET IN TOUCH</button>
+    <button onclick="window.location.href='#contact2'" class="b2">LET'S GET IN TOUCH</button>
 </div>
 
 
@@ -123,14 +123,30 @@
 
     <footer> 
     <div class="bottom">
+
+
+
     
-        <div class="contact">
+     <div class="contact contact2" id="contact2">
         <p >CONTACT</p>
+
+<div id="git">
+    <a href="mailto:ava.qa.engineer@gmail.com" target="_blank">
+        <img class="git_email" src="img/email.png" title="ava.qa.engineer@gmail.com">
+    </a>
+    <a href="https://github.com/100creativeways" target="_blank">
+        <img class="git_email" src="img/git.png" title="https://github.com/100creativeways">
+    </a>
+</div>
+
+
+</div>
+
+        <!--
     </div>
         <div class="form">
          <p id="contact-form" class="fill_out"> PLEASE FILL OUT THE FORM BELOW</p>
          <p class="fill_out">I WILL ANSWER WITHIN 24 HOURS</p>
-        
         
 
          <div class="lines"> 
@@ -144,14 +160,27 @@
          <button class="footer_button"> SUBMIT</button>
 
         </div>
-              
+            -->
+
+
+
         </div>
     </footer>
 
 
+
+
+
+
+
+
+
+
+
+
 <div id="customPopup" class="popup-overlay">
     <div class="popup-box">
-        <p>THIS PAGE IS COMING SOON. STAY TUNED!</p>
+        <p>THIS PAGE IS COMING SOON...<br><br>STAY TUNED!</p>
         <button id="closePopup">OK</button>
     </div>
 </div>
@@ -169,6 +198,8 @@
     document.getElementById("closePopup").addEventListener("click", function () {
         document.getElementById("customPopup").style.display = "none";
     });
+
+
 
 
     

@@ -8,7 +8,6 @@
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     display: none;
-    /* hidden initially */
     justify-content: center;
     align-items: center;
     z-index: 9999;
@@ -96,8 +95,6 @@ border-radius: 25px;
 button {
     border-radius: 16px;
     background-color:rgba(255, 174, 99, 0.4);
-
-
     border: 2 px solid rgb(212, 82, 30);
     border-color: rgb(244, 105, 50, 0.7);
     padding: 0.7em;
@@ -184,7 +181,7 @@ h5 {
 
 h5.example {
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.25s;
 }
 
 h5.example:hover {
@@ -488,4 +485,75 @@ nav {
     width: 77%;}
 
 
+}
+
+
+
+
+
+
+.git_email {
+    width: 170px;
+    height: auto;
+    margin: 0 1.5em;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+   padding-right: 3em;
+}
+
+
+
+.contact2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.contact2 {
+    margin-right: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.git_email {
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.git_email:hover {
+    opacity: 0.6;
+}
+
+.git_email.clicked {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+
+
+
+
+#git a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.git_email {
+    border: none;
+    outline: none;
 }
