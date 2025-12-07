@@ -1,54 +1,5 @@
 
 
-
-
-
-.popup-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.popup-box {
-    background: #fcc59e;
-    /* main orange-brown color */
-    color: #a13a12;
-    padding: 20px 30px;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    font-family: Verdana, sans-serif;
-    font-size: 1em;
-    font-weight: bolder;
-}
-
-.popup-box button {
-    margin-top: 15px;
-    background: #cb440f;
-    /* lighter orange */
-    border: none;
-    padding: 8px 18px;
-    border-radius: 8px;
-    color: #fcc59e;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.popup-box button:hover {
-    background: #f3a861;
-}
-
-
-
-
-
-
-
 body {background-color: #fec194;
 margin: 0;
     background-image: linear-gradient(to right, #e9904c, #fed9bf,  #e9904c); }
@@ -179,32 +130,33 @@ h5 {
     margin-bottom: -0.5em;
 }
 
-h5.example {
+.example {
     cursor: pointer;
     transition: color 0.25s;
 }
 
-h5.example:hover {
+.example:hover {
     color: #e88e18;
 }
 
 
+.img2 {
+    cursor: pointer;
+    transition: color 0.25s;
+}
 
-h5.e_mobile {
+.img2:hover {
+    color: #e88e18;
+}
+
+.e_mobile {
     cursor: pointer;
     transition: color 0.3s;
 }
 
-h5.e_mobile:hover {
+.e_mobile:hover {
     color: #e88e18;
 }
-
-
-
-
-
-
-
 
 
 .process {
@@ -489,9 +441,6 @@ nav {
 
 
 
-
-
-
 .git_email {
     width: 170px;
     height: auto;
@@ -519,15 +468,6 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
 .git_email {
     cursor: pointer;
     transition: opacity 0.3s, transform 0.2s;
@@ -544,8 +484,6 @@ nav {
 
 
 
-
-
 #git a {
     text-decoration: none;
     border: none;
@@ -556,4 +494,59 @@ nav {
 .git_email {
     border: none;
     outline: none;
+}
+
+
+
+.img2
+ {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.img2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(205, 73, 29, 0.65);
+}
+
+
+
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background: #fcc59e;
+    /* main orange-brown color */
+    color: #a13a12;
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.popup-box button {
+    margin-top: 15px;
+    background: #cb440f;
+    /* lighter orange */
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: #fcc59e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-box button:hover {
+    background: #f3a861;
 }
