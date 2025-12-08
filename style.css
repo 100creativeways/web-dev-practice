@@ -73,7 +73,8 @@ header {
 }
 
 .intro {
-    width: 58%;
+    
+    width: 72%;
     margin: 0 auto;
     justify-content: center;
     display: block;
@@ -82,10 +83,12 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #5e3519 ;
     padding-top: 1em;
+
 }
 
 .one {
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 h4 {
@@ -171,8 +174,8 @@ h3.process {
 }
 
 .i_ensure {
-    color: #7a401a;
-    font-size: 1.1em;
+    color: #983c02;
+    font-size: 1em;
     margin-bottom: 2em;
 }
 
@@ -549,4 +552,17 @@ nav {
 
 .popup-box button:hover {
     background: #f3a861;
+}
+
+.about {
+    text-align: justify;
+}
+
+.vision {
+    line-height: 1.5em;
+text-align: justify;
+    padding-top: 0.5em;
+font-weight: bold;
+font-style: italic;
+    color:#983c02;
 }
